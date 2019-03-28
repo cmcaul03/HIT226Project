@@ -1,7 +1,7 @@
 fieldset {
   padding: 1em;
   max-width: 800px;
-  font: 100%/1 sans-serif;
+  font: 100% sans-serif;
 }
 
 legend {
@@ -52,7 +52,7 @@ input, textarea{
       width: 80%;
       float: left;
       padding: 12px;
-      font: sans-serif;
+      font: 100% sans-serif;
     }
 
     label {

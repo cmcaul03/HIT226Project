@@ -1,7 +1,7 @@
 fieldset {
   padding: 1em;
   font:80%/1 sans-serif;
-  max-width:90%;
+  max-width: 800px;
 }
 
 .fieldset-auto-width {
@@ -44,15 +44,12 @@ input:focus, textarea:focus {
 }
 
 input, textarea{
-  width: 80%;
+  width: 60%;
+  float: left;
 }
 
-@media all and (min-width: 720px) {
-    input, textarea{
-      width: 60%;
-    }
-  
+@media all and (max-width: 800px) {
     fieldset {
-      max-width: 50%;
+      max-width: 100%;
     }
-}
+  }

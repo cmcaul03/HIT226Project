@@ -1,7 +1,5 @@
 fieldset {
   padding: 1em;
-  font: 120% sans-serif;
-  font-size: large;
   max-width: 800px;
 }
 
@@ -32,6 +30,8 @@ label {
 input, label, textarea {
     float:left;
     margin: 0.1em;
+    font: 120% sans-serif;
+    font-size: large;
 }
 
 input:focus, textarea:focus {
@@ -53,6 +53,8 @@ input, textarea{
       width: 80%;
       float: left;
       padding: 12px;
+      font: 120% sans-serif;
+      font-size: large;
     }
 
     label {

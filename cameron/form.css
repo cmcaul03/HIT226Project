@@ -1,12 +1,7 @@
 fieldset {
   padding: 1em;
   font:80%/1 sans-serif;
-}
-
-.fieldset-auto-width {
-
-display: inline-block;
-
+  max-width: 600px;
 }
 
 legend {
@@ -43,8 +38,7 @@ input:focus, textarea:focus {
 }
 
 input, textarea{
-  width: 60%;
-   max-width: 400px;
+  width: 40%;
   float: left;
 }
 

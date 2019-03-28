@@ -1,6 +1,7 @@
 fieldset {
   padding: 1em;
   max-width: 800px;
+  font: 100%/1 sans-serif;
 }
 
 legend {
@@ -30,8 +31,6 @@ label {
 input, label, textarea {
     float:left;
     margin: 0.1em;
-    font: 120% sans-serif;
-    font-size: large;
 }
 
 input:focus, textarea:focus {
@@ -53,8 +52,7 @@ input, textarea{
       width: 80%;
       float: left;
       padding: 12px;
-      font: 120% sans-serif;
-      font-size: large;
+      font: sans-serif;
     }
 
     label {

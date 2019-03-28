@@ -42,8 +42,67 @@ input, textarea{
   float: left;
 }
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 600px) {
     fieldset {
       max-width: 100%;
+    }
+
+    input, textarea{
+      width: 80%;
+      float: left;
+    }
+  }
+fieldset {
+  padding: 1em;
+  font:80%/1 sans-serif;
+  max-width: 600px;
+}
+
+legend {
+  padding: 0.2em 0.5em;
+  border:1px solid maroon;
+  color:maroon;
+  font-size:90%;
+  font-weight: bold;
+  text-align:right;
+}
+
+label {
+  clear: left;
+  width: 25%;
+  padding: 0.1em;
+  text-align: right;
+  font-weight: bold;
+}
+
+.submit {
+  clear: left;
+  margin: 20px;
+  margin-left: 40%;
+  width: auto;
+}
+
+input, label, textarea {
+    float:left;
+    margin: 0.1em;
+}
+
+input:focus, textarea:focus {
+      background: #b9d38826;
+}
+
+input, textarea{
+  width: 40%;
+  float: left;
+}
+
+@media all and (max-width: 600px) {
+    fieldset {
+      max-width: 100%;
+    }
+
+    input, textarea{
+      width: 80%;
+      float: left;
     }
   }

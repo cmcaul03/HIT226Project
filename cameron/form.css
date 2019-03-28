@@ -51,6 +51,7 @@ input, textarea{
     input, textarea{
       width: 80%;
       float: left;
+      padding: 12px;
     }
 
     label {

@@ -1,0 +1,41 @@
+fieldset {
+  padding: 1em;
+  font:80%/1 sans-serif;
+}
+
+legend {
+  padding: 0.2em 0.5em;
+  border:1px solid maroon;
+  color:maroon;
+  font-size:90%;
+  font-weight: bold;
+  text-align:right;
+}
+
+label {
+  clear: left;
+  width: 25%;
+  padding: 0.1em;
+  text-align: right;
+  font-weight: bold;
+}
+
+input {
+  width: 17.5em;
+}
+
+.submit {
+  clear: left;
+  margin: 20px;
+  margin-left: 40%;
+  width: auto;
+}
+
+input, label, textarea {
+    float:left;
+    margin: 0.1em;
+}
+
+input:focus, textarea:focus {
+      background: #b9d38826;
+}

@@ -1,6 +1,13 @@
 fieldset {
   padding: 1em;
   font:80%/1 sans-serif;
+  max-width: 50%;
+}
+
+.fieldset-auto-width {
+
+display: inline-block;
+
 }
 
 legend {
@@ -20,10 +27,6 @@ label {
   font-weight: bold;
 }
 
-input {
-  width: 17.5em;
-}
-
 .submit {
   clear: left;
   margin: 20px;
@@ -39,3 +42,13 @@ input, label, textarea {
 input:focus, textarea:focus {
       background: #b9d38826;
 }
+
+input, textarea{
+  width: 17.5em;
+}
+
+@media all and (min-width: 520px) {
+    input, textarea{
+      width: 60%;
+    }
+  }

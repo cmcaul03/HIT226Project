@@ -1,6 +1,7 @@
 fieldset {
   padding: 1em;
-  font:80%/1 sans-serif;
+  font: 120% sans-serif;
+  font-size: large;
   max-width: 800px;
 }
 

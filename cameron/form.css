@@ -1,11 +1,11 @@
-form {
+form#Prac2_Form {
   padding: 1em;
   max-width: 50em;
   font: 100% sans-serif;
   background-color: #f2f2f2;
 }
 
-legend {
+form#Prac2_Form legend {
   padding: 0.2em 0.5em;
   border:1px solid maroon;
   color:maroon;
@@ -15,7 +15,7 @@ legend {
   background-color: white;
 }
 
-label {
+form#Prac2_Form label {
   clear: left;
   padding: 0.75em 0.75em 0.75em 0;
   font-weight: bold;
@@ -23,23 +23,23 @@ label {
   width: 25%;
 }
 
-.submit {
+form#Prac2_Form .submit {
   clear: left;
   margin: 1.25em;
   margin-left: 40%;
   width: auto;
 }
 
-input, label, textarea {
+form#Prac2_Form input, form#Prac2_Form label, form#Prac2_Form textarea {
     float:left;
     margin: 0.1em;
 }
 
-input:focus, textarea:focus {
+form#Prac2_Form input:focus, form#Prac2_Form textarea:focus {
       background: #03a9f421;
 }
 
-input, textarea{
+form#Prac2_Form input, form#Prac2_Form textarea{
   width: 60%;
   float: left;
   padding: 0.75em;
@@ -47,18 +47,18 @@ input, textarea{
 }
 
 @media all and (max-width: 600px) {
-    fieldset {
+    form#Prac2_Form {
       max-width: 100%;
     }
 
-    input, textarea{
+    form#Prac2_Form input, form#Prac2_Form textarea{
       width: 80%;
       float: left;
       padding: 0.75em;
       font: 100% sans-serif;
     }
 
-    label {
+    form#Prac2_Form label {
       text-align: left;
       padding: 0.75em 0.75em 0.75em 0;
       width: 100%;

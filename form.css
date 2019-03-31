@@ -1,0 +1,79 @@
+h1 {
+  color: #424874;
+  font-family: "Arial", sans-serif;
+}
+
+form {
+  background-color: #D7DDE5;
+  font: 100% sans-serif;
+  max-width: 50em;
+  border-radius: 10px;
+  padding: 10px;
+  overflow: auto;
+}
+
+form div {
+  margin: 5px 0;
+  width: 100%;
+}
+
+form legend {
+  padding: 0.2em 0.5em;
+  border:1px solid #3f51b5;
+  color: #3f51b5;
+  font-weight: bold;
+  text-align:right;
+  background-color: white;
+}
+
+form label {
+  color: #424874;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0.75em 0.75em 0.75em 0;
+  font-weight: bold;
+  text-align: left;
+  width: 25%;
+}
+
+form input[type="submit"], form button[type="submit"] {
+  display: inline-block;
+  margin: 1.25em;
+  margin-left: 40%;
+  width: auto;
+}
+
+form input, form label, form textarea {
+    float:left;
+    margin: 0.1em;
+}
+
+form input:focus, form textarea:focus {
+      background: #03a9f421;
+}
+
+form input, form textarea{
+  width: 60%;
+  float: left;
+  padding: 0.75em;
+  font: 100% sans-serif;
+}
+
+@media all and (max-width: 600px) {
+    form {
+      max-width: 100%;
+    }
+
+    form input, form textarea{
+      width: 80%;
+      float: left;
+      padding: 0.75em;
+      font: 100% sans-serif;
+    }
+
+    form label {
+      text-align: left;
+      padding: 0.75em 0.75em 0.75em 0;
+      width: 100%;
+    }
+  }

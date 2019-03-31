@@ -23,7 +23,7 @@ form label {
   width: 25%;
 }
 
-.submit {
+form input[type="submit"] {
   clear: left;
   margin: 1.25em;
   margin-left: 40%;

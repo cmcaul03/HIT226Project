@@ -1,11 +1,11 @@
-form#Prac2_Form {
+form {
   padding: 1em;
   max-width: 50em;
   font: 100% sans-serif;
   background-color: #f2f2f2;
 }
 
-form#Prac2_Form legend {
+form legend {
   padding: 0.2em 0.5em;
   border:1px solid maroon;
   color:maroon;
@@ -15,7 +15,7 @@ form#Prac2_Form legend {
   background-color: white;
 }
 
-form#Prac2_Form label {
+form label {
   clear: left;
   padding: 0.75em 0.75em 0.75em 0;
   font-weight: bold;
@@ -23,23 +23,23 @@ form#Prac2_Form label {
   width: 25%;
 }
 
-form#Prac2_Form .submit {
+.submit {
   clear: left;
   margin: 1.25em;
   margin-left: 40%;
   width: auto;
 }
 
-form#Prac2_Form input, form#Prac2_Form label, form#Prac2_Form textarea {
+form input, form label, form textarea {
     float:left;
     margin: 0.1em;
 }
 
-form#Prac2_Form input:focus, form#Prac2_Form textarea:focus {
+form input:focus, form textarea:focus {
       background: #03a9f421;
 }
 
-form#Prac2_Form input, form#Prac2_Form textarea{
+form input, form textarea{
   width: 60%;
   float: left;
   padding: 0.75em;
@@ -47,18 +47,18 @@ form#Prac2_Form input, form#Prac2_Form textarea{
 }
 
 @media all and (max-width: 600px) {
-    form#Prac2_Form {
+    form {
       max-width: 100%;
     }
 
-    form#Prac2_Form input, form#Prac2_Form textarea{
+    form input, form textarea{
       width: 80%;
       float: left;
       padding: 0.75em;
       font: 100% sans-serif;
     }
 
-    form#Prac2_Form label {
+    form label {
       text-align: left;
       padding: 0.75em 0.75em 0.75em 0;
       width: 100%;

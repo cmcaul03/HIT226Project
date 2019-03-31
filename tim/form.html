@@ -1,31 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <title>Form - HIT226</title>
   <link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="Description" content="CSS Form developed for HIT226">
 </head>
 <body>
   <h1>Registration</h1>
   <form>
-    <div class="form-element">
+    <div>
       <label for="name">Name</label>
       <input id="name" maxlength="20" type="text"/>
     </div>
-    <div class="form-element">
+    <div>
       <label for="address">Address</label>
-      <input id="address" maxlength="20" type="text"/>
+      <textarea id="address" rows="4" cols="26"></textarea>
     </div>
-    <div class="form-element">
+    <div>
       <label for="email">Email</label>
-      <input id="email" maxlength="20" type="email"/>
+      <input id="email" maxlength="50" type="email"/>
     </div>
-    <div class="form-element">
+    <div>
       <label for="phone">Telephone number</label>
-      <input id="phone" maxlength="20" type="tel"/>
+      <input id="phone" maxlength="15" type="tel"/>
     </div>
-    <div class="form-element">
+    <div>
       <label for="birthdate">Birthdate</label>
-      <input id="birthdate" maxlength="20" type="date"/>
+      <input id="birthdate" type="date"/>
     </div>
+    <div>
+      <button type="submit">Submit</button>
+    </div>
+  </form>
 </body>
 </html>

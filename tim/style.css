@@ -1,10 +1,30 @@
 h1 {
+  color: #424874;
   font-family: "Arial", sans-serif;
 }
+
+form {
+  background-color: #D7DDE5;
+  width: 50%;
+  border-radius: 10px;
+  padding: 10px;
+}
+form div {
+  margin: 5px 0;
+  width: 100%;
+}
+
+
+
 label {
+  color: #424874;
   display: inline-block;
-  width: 120px;
+  width: 140px;
   vertical-align: top;
+  font-family: "Arial", sans-serif;
+}
+input {
+  width: 200px;
 }
 
 input + label {

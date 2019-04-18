@@ -2,12 +2,8 @@
 
 /* Base page elements */
 
-main {
-	padding: 20px 10px;
-}
 
-body, main, p,
-.body {
+body, main, p {
 	font-family: 'Open Sans', sans-serif;
 	color: #353434;
 }
@@ -18,18 +14,19 @@ body {
 
 main {
 	background-color: white;
+	padding: 2em 1em;
 }
 
 section {
 	margin: 20px 0;
-	padding: 10px;
+	padding: 1em;
   border-style: solid;
 }
 
 
 /* Text */
 
-h1, h2, h3, h4, h5, h6,.heading {
+h1, h2, h3, h4, h5, h6 {
 	font-family: 'Fjalla One', sans-serif;
 	color: #0A2463;
 	font-weight: bold;
@@ -44,6 +41,35 @@ a {
 	color: #247BA0;
 }
 
+/* Buttons */
+
+button {
+	border: none;
+	color: white;
+	padding: 1em 2em;
+	text-align: center;
+	display: inline-block;
+	font-size: 1em;
+	margin: 0.2em;
+	cursor: pointer;
+}
+
+.button_primary {
+	background-color: #0A2463;
+}
+
+.button_primary:hover {
+	background-color: #247BA0;
+}
+
+
+.button_secondary {
+	background-color: #FB3640;
+}
+
+.button_secondary:hover {
+	background-color: #247BA0;
+}
 
 /* Colours */
 

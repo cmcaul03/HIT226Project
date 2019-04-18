@@ -41,6 +41,38 @@ a {
 	color: #247BA0;
 }
 
+a:hover {
+	color: #9f24a0;
+}
+
+/* Menu */
+nav.mainmenu {
+	width: 100%;
+	border: 1px solid #cccaca;
+	background-color: #E2E2E2;
+	overflow: hidden;
+}
+
+.mainmenu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.mainmenu li {
+	display: list-item;
+	text-align: center;
+	padding: 1em;
+}
+
+.mainmenu li a {
+	color: #3c3c3c;
+}
+
+.mainmenu li:hover {
+	background-color: #cccaca;
+}
+
 /* Buttons */
 
 button {
@@ -75,9 +107,9 @@ button {
 
 .colour {
 	color: white;
-	padding-top: 50px;
+	padding-top: 3em;
 	font-size: 1.2em;
-	padding-left: 10px;
+	padding-left: 1em;
 }
 
 .colour_container {
@@ -109,8 +141,12 @@ button {
 	background: #247BA0;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 600px) {
 	main {
-		width: 576px;
+		width: 550px;
 		margin: auto;
+	}
+
+	.mainmenu li {
+			float: left;
 	}

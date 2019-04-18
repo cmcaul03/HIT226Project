@@ -5,7 +5,6 @@
 
 body, main, p {
 	font-family: 'Open Sans', sans-serif;
-	font-display: swap;
 	color: #353434;
 }
 
@@ -29,7 +28,6 @@ section {
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Fjalla One', sans-serif;
-	font-display: swap;
 	color: #0A2463;
 	font-weight: bold;
 }

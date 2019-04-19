@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans');
 
+* {
+  box-sizing: border-box;;
+}
+
 /* Base page elements */
 
 p {
@@ -67,13 +71,15 @@ button:hover {
   border-width: thin;
   border-color: grey;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  width: 640px;
+  max-width: 600px;
+  min-width: 350px;
   margin: 0 auto;
 }
 
 .cardcontainer > img {
   border-top-left-radius: inherit;
   border-top-right-radius: inherit;
+  width: 100%;
 }
 
 .cardtext {

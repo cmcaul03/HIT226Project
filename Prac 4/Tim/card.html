@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  </head>
+  <body>
+    <main>
+    <div class="cardcontainer">
+      <img src="mindmap.jpg" alt="">
+      <div class="cardtext">
+      <h2>Mind Map</h2>
+      <p>Notetaking in a diagram, usually with the main idea in the centre and
+        branching out to related ideas. Mind Maps are a great tool to organise
+        ideas provided you don't have a large volume of information to organise.</p>
+        </div>
+        <div class="cardactions">
+        <i class="material-icons md-48" onclick="toggleFavourite(this)">favorite_border</i>
+        <button type="button" name="learnmore">Learn More</button>
+        </div>
+    </div>
+    </main>
+    <script>
+      function toggleFavourite(element) {
+        if(element.innerHTML == "favorite_border") {
+          element.innerHTML = "favorite";
+        } else {
+          element.innerHTML = "favorite_border";
+        }
+      }
+    </script>
+  </body>
+</html>

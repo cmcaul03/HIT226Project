@@ -1,69 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans');
 
-* {
-  box-sizing: border-box;;
-}
-
-/* Base page elements */
-
-p {
-	font-family: 'Open Sans', sans-serif;
-	color: #353434;
-}
-
-body {
-	background-color: #e2e2e2;
-}
-
-main {
-	background-color: white;
-  padding: 2em 1em;
-}
-
-/* Text */
-
-h1, h2, h3, h4, h5, h6 {
-	font-family: 'Fjalla One', sans-serif;
-	color: #0A2463;
-	font-weight: bold;
-}
-
-h2, h4 {
-	font-weight: normal;
-  color: #B0030B;
-}
-
 /* Rules for sizing the icon. */
 .material-icons.md-18 { font-size: 18px; }
 .material-icons.md-24 { font-size: 24px; }
 .material-icons.md-36 { font-size: 36px; }
 .material-icons.md-48 { font-size: 48px; }
 
-/* Rules for using icons as black on a light background. */
-.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
-.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
-
-/* Rules for using icons as white on a dark background. */
-.material-icons.md-light { color: rgba(255, 255, 255, 1); }
-.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
-
-/* Buttons */
-
-button {
-	border: none;
-	color: white;
-	padding: 1em;
-	text-align: center;
-	display: inline-block;
-	font-size: 1em;
-	margin: 0.3em;
-	cursor: pointer;
-  background-color: #0A2463;
+/* Override main width */
+main {
+  width: auto;
 }
 
-button:hover {
-	background-color: #247BA0;
-}
+/* Card rules */
 
 .cardcontainer {
   border-radius: 10px;

@@ -63,11 +63,12 @@ nav.mainmenu {
 .mainmenu li {
 	display: list-item;
 	text-align: center;
-	padding: 1em;
+	padding: 1em 0;
 }
 
 .mainmenu li a {
 	color: #3c3c3c;
+	padding: 1em;
 }
 
 .mainmenu li:hover {

@@ -18,10 +18,12 @@ main {
   border-style: solid;
   border-width: thin;
   border-color: grey;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   max-width: 600px;
   min-width: 350px;
   margin: 0 auto;
+}
+.cardcontainer:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .cardcontainer > img {

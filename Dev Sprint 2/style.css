@@ -56,6 +56,14 @@ nav.mainmenu {
 	overflow: hidden;
 }
 
+i#nav-hide {
+  display: none;
+}
+
+i#nav-show {
+  display: inline-block;
+}
+
 img.logo {
   width: 100%;
   margin-bottom: -1%;

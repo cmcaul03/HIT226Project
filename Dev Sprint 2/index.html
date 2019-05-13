@@ -4,13 +4,15 @@
     <link rel="stylesheet" href="style.css" type="text/css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="Description" content="Quivering Sharks Style Guide">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Quivering Sharks - Note Taking Template</title>
+    <script type="text/javascript" src="js/nav.js"></script>
   </head>
   <body>
     <main>
       <nav class="mainmenu">
-        <img src="images/cdu_logo.png" alt="logo" class="logo">
-        <ul>
+        <img src="images/cdu_logo.png" alt="logo" class="logo" onclick="closeNav()">
+        <ul ID="nav-overlay">
           <li><a href="#">Home</a></li>
           <li><a href="#">Courses</a></li>
           <li><a href="#">Library</a></li>
@@ -18,6 +20,8 @@
           <li><a href="#">Learnline Login</a></li>
           <li class="search"><input type="text" placeholder="Search.."></li>
         </ul>
+        <i class="fa fa-bars" ID="nav-show" onclick="closeNav()"></i>
+        <i class="fa fa-bars" ID="nav-hide" onclick="openNav()"></i>
       </nav>
         <nav class="secondarymenu">
           <ul>

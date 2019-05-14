@@ -10,6 +10,7 @@ body, main, p {
 
 body {
 	background-color: #e2e2e2;
+	min-width: 310px;
 }
 
 main {
@@ -67,7 +68,7 @@ nav.mainmenu {
 }
 
 img.logo {
-  width: 35%;
+  width: 30%;
   margin-bottom: -1%;
 }
 
@@ -103,15 +104,7 @@ img.logo {
 
 /* Secondary Menu */
 nav.secondarymenu {
-	width: 35%;
-	border: 1px solid #cccaca;
-	background-color: #0A2463;
-	overflow: hidden;
-	float: left;
-}
-
-nav.secondarymenu {
-	width: 35%;
+	width: 30%;
 	border: 1px solid #cccaca;
 	background-color: #0A2463;
 	overflow: hidden;
@@ -142,6 +135,72 @@ nav.secondarymenu {
 
 .secondarymenu li:hover {
 	background-color: #B0030B;
+}
+
+.dropdown {
+	overflow: hidden;
+	max-height: 0;
+	-webkit-transition: all 1s ease-in-out;
+	-webkit-transition-delay: 0.3s;
+	transition: all 1s ease-in-out;
+	transition-delay: 0.3s;
+	-moz-transition: all 1s ease-in-out;
+	-moz-transition-delay: 0.3s;
+}
+
+.dropdown2 {
+	overflow: hidden;
+	max-height: 0;
+	-webkit-transition: all 1s ease-in-out;
+	-webkit-transition-delay: 0.3s;
+	transition: all 1s ease-in-out;
+	transition-delay: 0.3s;
+	-moz-transition: all 1s ease-in-out;
+	-moz-transition-delay: 0.3s;
+}
+
+.secondarymenu li:hover .dropdown {
+  display: block;
+  max-height: 400px;
+	background-color: #E2E2E2;
+	-webkit-transition: all 1s ease-in-out;
+	-webkit-transition-delay: 0.5s;
+	transition: all 1s ease-in-out;
+	transition-delay: 0.5s;
+	-moz-transition: all 1s ease-in-out;
+	-moz-transition-delay: 0.5s;
+}
+
+.secondarymenu li:hover .dropdown li:hover .dropdown2{
+  display: block;
+  max-height: 400px;
+	background-color: #E2E2E2;
+	-webkit-transition: all 1s ease-in-out;
+	-webkit-transition-delay: 0.5s;
+	transition: all 1s ease-in-out;
+	transition-delay: 0.5s;
+	-moz-transition:all 1s ease-in-out;
+	-moz-transition-delay: 0.5s;
+}
+
+.secondarymenu li:hover .dropdown li:hover a{
+  color: #E2E2E2;
+}
+
+.secondarymenu li:hover .dropdown li a{
+  color: black;
+}
+
+.secondarymenu li:hover .dropdown li:hover li:hover a{
+  color: #E2E2E2;
+}
+
+.secondarymenu li:hover .dropdown li:hover .dropdown2 {
+  max-height: 200px;
+}
+
+.secondarymenu li:hover .dropdown li:hover li a{
+  color: black;
 }
 
 /* Buttons */

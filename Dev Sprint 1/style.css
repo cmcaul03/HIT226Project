@@ -19,6 +19,7 @@ main {
   overflow: hidden;
 	width: 80%;
 	margin: auto;
+	display: block;
 }
 
 section {

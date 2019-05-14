@@ -56,7 +56,7 @@ a:hover {
 }
 
 /* Hide Hamburger */
-.mainmenu label, #hamburger {
+.mainmenu label, #hamburger, .secondarymenu label#toggle-menu , #navcheckbox {
   display: none;
 }
 
@@ -118,14 +118,14 @@ nav.secondarymenu {
 	padding: 0;
 }
 
-.secondarymenu li {
+.secondarymenu li, label#toggle-menu {
 	display: list-item;
 	text-align: center;
 	padding: 1em 0;
 	float: none;
 }
 
-.secondarymenu li a {
+.secondarymenu li a, label#toggle-menu {
 	color: #cccccc;
 	padding: 1em;
 }
@@ -312,6 +312,10 @@ button {
 			margin-left: 47%;
 	  }
 
+		.secondarymenu label#toggle-menu {
+			display: list-item;
+		}
+
 	  /* Break down menu items into vertical */
 	  .mainmenu ul li {
 	    display: block;
@@ -324,14 +328,14 @@ button {
 	  }
 
 	  /* Toggle show/hide menu on checkbox click */
-	  .mainmenu ul {
+		.mainmenu ul, .secondarymenu ul {
 	    display: none;
 	  }
-	  .mainmenu input:checked ~ ul {
+	  .mainmenu input:checked ~ ul,  .secondarymenu input:checked ~ ul  {
 	    display: block;
 	  }
 
-		.mainmenu input:checked ~ li {
+		.mainmenu input:checked ~ li, .secondarymenu input:checked ~ li {
 			display: block;
 			clear: left;
 		}

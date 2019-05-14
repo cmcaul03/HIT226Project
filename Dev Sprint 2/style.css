@@ -16,14 +16,19 @@ main {
 	background-color: white;
 	padding: 2em 1em;
   overflow: hidden;
+	width: 80%;
+	margin: auto;
 }
 
 section {
 	margin: 20px 1%;
 	padding: 1em;
   border-style: solid;
+  width: 55%;
   float: left;
 }
+
+
 
 
 /* Text */
@@ -48,6 +53,11 @@ a:hover {
 	color: #9f24a0;
 }
 
+/* Hide Hamburger */
+.mainmenu label, #hamburger {
+  display: none;
+}
+
 /* Main Menu */
 nav.mainmenu {
 	width: 100%;
@@ -56,34 +66,30 @@ nav.mainmenu {
 	overflow: hidden;
 }
 
-i#nav-hide {
-  display: none;
-}
-
-i#nav-show {
-  display: inline-block;
-}
-
 img.logo {
-  width: 100%;
+  width: 35%;
   margin-bottom: -1%;
 }
 
 .mainmenu input[type=text] {
   padding: 6px;
   border: none;
+	flaot: right;
 }
 
 .mainmenu ul {
+	display: inline-block;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 }
 
 .mainmenu li {
-	display: list-item;
+	display: inline-block;
 	text-align: center;
 	padding: 1em 0;
+	box-sizing: border-box;
+	float: left;
 }
 
 .mainmenu li a {
@@ -97,10 +103,19 @@ img.logo {
 
 /* Secondary Menu */
 nav.secondarymenu {
-	width: 100%;
+	width: 35%;
 	border: 1px solid #cccaca;
 	background-color: #0A2463;
 	overflow: hidden;
+	float: left;
+}
+
+nav.secondarymenu {
+	width: 35%;
+	border: 1px solid #cccaca;
+	background-color: #0A2463;
+	overflow: hidden;
+	float: left;
 }
 
 .secondarymenu ul {
@@ -113,6 +128,7 @@ nav.secondarymenu {
 	display: list-item;
 	text-align: center;
 	padding: 1em 0;
+	float: none;
 }
 
 .secondarymenu li a {
@@ -196,53 +212,89 @@ button {
 	background: #247BA0;
 }
 
-@media (min-width: 700px) {
-	main {
-		width: 80%;
-		margin: auto;
-    overflow: hidden;
-	}
 
-	.mainmenu li {
-			float: left;
-	}
-
-  .mainmenu input[type=text] {
-    float: right;
-    padding: 6px;
-    border: none;
-  }
-
-  nav.secondarymenu {
-  	width: 35%;
-  	border: 1px solid #cccaca;
-  	background-color: #0A2463;
-  	overflow: hidden;
-    float: left;
-  }
-
-  .secondarymenu li {
-      float: none;
-  }
-
-  .mainmenu ul {
+/* [ON SMALL SCREENS] */
+@media screen and (max-width: 1400px){
+  /* Show Hamburger */
+  .mainmenu label {
     display: inline-block;
-  	list-style-type: none;
-  	margin: 0;
-  	padding: 0;
+    color: #fff;
+    background: #a02620;
+    font-style: normal;
+    font-size: 1.2em;
+    padding: 10px;
+		margin-left: 1%;
   }
 
-img.logo {
-  width: 35%;
-  margin-bottom: -1%;
-}
+  /* Break down menu items into vertical */
+  .mainmenu ul li {
+    display: block;
+  }
 
-section {
-	margin: 20px 1%;
-	padding: 1em;
-  border-style: solid;
-  width: 55%;
-  float: left;
+  /* Toggle show/hide menu on checkbox click */
+  .mainmenu ul {
+    display: none;
+  }
+  .mainmenu input:checked ~ ul {
+    display: block;
+  }
+
 }
+	@media screen and (max-width: 950px){
+	  /* Show Hamburger */
+	  .mainmenu label {
+	    display: inline-block;
+	    color: #fff;
+	    background: #a02620;
+	    font-style: normal;
+	    font-size: 1.2em;
+	    padding: 10px;
+			margin-left: 47%;
+	  }
+
+	  /* Break down menu items into vertical */
+	  .mainmenu ul li {
+	    display: block;
+			clear: left;
+			width: 100%;
+	  }
+
+	  .mainmenu ul li {
+	    border-top: 1px solid #333;
+	  }
+
+	  /* Toggle show/hide menu on checkbox click */
+	  .mainmenu ul {
+	    display: none;
+	  }
+	  .mainmenu input:checked ~ ul {
+	    display: block;
+	  }
+
+		.mainmenu input:checked ~ li {
+			display: block;
+			clear: left;
+		}
+
+		nav.secondarymenu {
+			width: 100%;
+			border: 1px solid #cccaca;
+			background-color: #0A2463;
+			overflow: hidden;
+			float: left;
+		}
+
+		section {
+			margin: 20px 1%;
+			padding: 1em;
+		  border-style: solid;
+		  width: 85%;
+		  float: left;
+		}
+
+		img.logo {
+		  width: 100%;
+		  margin-bottom: 0%;
+		}
 
 }

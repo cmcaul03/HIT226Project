@@ -160,7 +160,7 @@ nav.secondarymenu {
 	-moz-transition-delay: 0.3s;
 }
 
-.secondarymenu li:hover .dropdown {
+.secondarymenu li:hover .dropdown, .secondarymenu li:focus-within .dropdown {
   display: block;
   max-height: 400px;
 	background-color: #E2E2E2;
@@ -172,7 +172,7 @@ nav.secondarymenu {
 	-moz-transition-delay: 0.5s;
 }
 
-.secondarymenu li:hover .dropdown li:hover .dropdown2{
+.secondarymenu li:hover .dropdown li:hover .dropdown2, .secondarymenu li:focus-within .dropdown li:focus-within .dropdown2{
   display: block;
   max-height: 400px;
 	background-color: #E2E2E2;
@@ -196,7 +196,7 @@ nav.secondarymenu {
   color: #E2E2E2;
 }
 
-.secondarymenu li:hover .dropdown li:hover .dropdown2 {
+.secondarymenu li:hover .dropdown li:hover .dropdown2, .secondarymenu li:focus-within .dropdown li:focus-within .dropdown2 {
   max-height: 200px;
 }
 

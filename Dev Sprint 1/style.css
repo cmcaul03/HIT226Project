@@ -10,7 +10,6 @@ body, main, p {
 
 body {
 	background-color: #e2e2e2;
-	min-width: 310px;
 }
 
 main {
@@ -55,7 +54,7 @@ a:hover {
 }
 
 /* Hide Hamburger */
-.mainmenu label, #hamburger {
+.mainmenu label, #hamburger, .secondarymenu label, #toggle-menu {
   display: none;
 }
 
@@ -105,86 +104,58 @@ img.logo {
 /* Secondary Menu */
 nav.secondarymenu {
 	width: 30%;
+	position:relative;
 	border: 1px solid #cccaca;
 	background-color: #0A2463;
 	overflow: hidden;
 	float: left;
 }
 
-.secondarymenu ul {
+nav.secondarymenu ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 }
 
-.secondarymenu li {
+nav.secondarymenu li, label#toggle-menu {
 	display: list-item;
 	text-align: center;
 	padding: 1em 0;
 	float: none;
+	position:relative;
+	border-top: 1px solid white;
 }
 
-.secondarymenu li a {
+nav.secondarymenu li a, label#toggle-menu {
 	color: #cccccc;
-	padding: 1em;
+	padding: 0.5em;
+	display:block;
+	transition:0.2s;
+	text-decoration: none
 }
 
-.secondarymenu > a {
+nav.secondarymenu > a {
 	color: #cccccc;
 }
 
-.secondarymenu li:hover {
+nav.secondarymenu li:hover, .secondarymenu li:hover li:hover li:hover {
 	background-color: #B0030B;
 }
 
-.dropdown {
-	overflow: hidden;
-	max-height: 0;
-	-webkit-transition: all 1s ease-in-out;
-	-webkit-transition-delay: 0.3s;
-	transition: all 1s ease-in-out;
-	transition-delay: 0.3s;
-	-moz-transition: all 1s ease-in-out;
-	-moz-transition-delay: 0.3s;
+nav.secondarymenu ul ul {
+	background:rgba(0,0,0,0.1);
+	transition: max-height 0.5s ease-in-out;
+	max-height:0;
+	overflow:hidden;
 }
 
-.dropdown2 {
-	overflow: hidden;
-	max-height: 0;
-	-webkit-transition: all 1s ease-in-out;
-	-webkit-transition-delay: 0.3s;
-	transition: all 1s ease-in-out;
-	transition-delay: 0.3s;
-	-moz-transition: all 1s ease-in-out;
-	-moz-transition-delay: 0.3s;
+nav.secondarymenu li:hover > ul{
+	max-height: 1000px;
+	transition: max-height 0.9s ease-in;
 }
 
-.secondarymenu li:hover .dropdown {
-  display: block;
-  max-height: 400px;
+.secondarymenu li:hover .dropdown, .secondarymenu li:hover .dropdown li:hover {
 	background-color: #E2E2E2;
-	-webkit-transition: all 1s ease-in-out;
-	-webkit-transition-delay: 0.5s;
-	transition: all 1s ease-in-out;
-	transition-delay: 0.5s;
-	-moz-transition: all 1s ease-in-out;
-	-moz-transition-delay: 0.5s;
-}
-
-.secondarymenu li:hover .dropdown li:hover .dropdown2{
-  display: block;
-  max-height: 400px;
-	background-color: #E2E2E2;
-	-webkit-transition: all 1s ease-in-out;
-	-webkit-transition-delay: 0.5s;
-	transition: all 1s ease-in-out;
-	transition-delay: 0.5s;
-	-moz-transition:all 1s ease-in-out;
-	-moz-transition-delay: 0.5s;
-}
-
-.secondarymenu li:hover .dropdown li:hover a{
-  color: #E2E2E2;
 }
 
 .secondarymenu li:hover .dropdown li a{
@@ -192,15 +163,11 @@ nav.secondarymenu {
 }
 
 .secondarymenu li:hover .dropdown li:hover li:hover a{
-  color: #E2E2E2;
+  color: white;
 }
 
-.secondarymenu li:hover .dropdown li:hover .dropdown2 {
-  max-height: 200px;
-}
-
-.secondarymenu li:hover .dropdown li:hover li a{
-  color: black;
+nav.secondarymenu li li li {
+	border: 0px;
 }
 
 /* Buttons */
@@ -285,6 +252,13 @@ button {
 		margin-left: 1%;
   }
 
+	.secondarymenu label {
+		display: block;
+		color: #cccccc;
+		padding: 1em 0;
+		text-align: center;
+	}
+
   /* Break down menu items into vertical */
   .mainmenu ul li {
     display: block;
@@ -323,17 +297,19 @@ button {
 	  }
 
 	  /* Toggle show/hide menu on checkbox click */
-	  .mainmenu ul {
+	  .mainmenu ul, .secondarymenu ul {
 	    display: none;
 	  }
-	  .mainmenu input:checked ~ ul {
-	    display: block;
-	  }
 
-		.mainmenu input:checked ~ li {
-			display: block;
-			clear: left;
-		}
+		.mainmenu input:checked ~ ul,  .secondarymenu input:checked ~ ul ul, .secondarymenu input:checked ~ ul  {
+ 	    display: block;
+	 	}
+
+	 	.mainmenu input:checked ~ li, .secondarymenu input:checked ~ li, .secondarymenu input:checked ~ li li {
+ 			display: block;
+ 			clear: left;
+	 }
+
 
 		nav.secondarymenu {
 			width: 100%;

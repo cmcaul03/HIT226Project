@@ -10,6 +10,7 @@ body, main, p {
 
 body {
 	background-color: #e2e2e2;
+	min-width: 320px;
 }
 
 main {
@@ -43,7 +44,6 @@ h2, h4 {
 	font-weight: normal;
   color: #B0030B;
 }
-
 
 a {
 	color: #247BA0;
@@ -121,7 +121,7 @@ nav.secondarymenu ul {
 nav.secondarymenu li, label#toggle-menu {
 	display: list-item;
 	text-align: center;
-	padding: 1em 0;
+	padding: 0.4em 0;
 	float: none;
 	position:relative;
 	border-top: 1px solid white;

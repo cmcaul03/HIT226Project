@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
 	/* If mobile browser, prevent click on parent nav item from redirecting to URL */
-	if(is_touch_device()) {
+
 
 		$('#secondarymenu li > ul').each(function (index, elem) {
 			/* Option 1: Use this to modify the href on the <a> to # */
@@ -11,7 +11,7 @@ $(document).ready(function() {
   				event.preventDefault();
 			});
 		});
-	}
+	
 
 });
 

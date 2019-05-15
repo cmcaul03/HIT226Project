@@ -94,7 +94,7 @@ img.logo {
 }
 
 .mainmenu li a {
-	color: #3c3c3c;
+	color: black;
 	padding: 1em;
 }
 
@@ -147,6 +147,7 @@ nav.secondarymenu li:hover, .secondarymenu li:hover li:hover li:hover {
 nav.secondarymenu ul ul {
 	background:rgba(0,0,0,0.1);
 	transition: max-height 0.5s ease-in-out;
+	transition-delay: 0.4s;
 	max-height:0;
 	overflow:hidden;
 }
@@ -154,6 +155,7 @@ nav.secondarymenu ul ul {
 nav.secondarymenu li:hover > ul{
 	max-height: 1000px;
 	transition: max-height 0.9s ease-in;
+	transition-delay: 0.4s;
 }
 
 .secondarymenu li:hover .dropdown, .secondarymenu li:hover .dropdown li:hover {

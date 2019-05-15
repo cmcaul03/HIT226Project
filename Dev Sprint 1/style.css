@@ -259,6 +259,33 @@ button {
 	background: #247BA0;
 }
 
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: #eee;
+	float: right;
+	width: 65%;
+}
+
+ul.breadcrumb li {
+  display: inline;
+}
+
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+ul.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
 
 /* [ON SMALL SCREENS] */
 @media screen and (max-width: 1400px){
@@ -279,12 +306,7 @@ button {
 	}
 
 
-	.secondarymenu label {
-		display: block;
-		color: white;
-		padding: 1em 0;
-		text-align: center;
-	}
+
 
   /* Break down menu items into vertical */
   .mainmenu ul li {
@@ -316,6 +338,21 @@ button {
 			text-align: center;
 			margin: 0px;
 	  }
+
+		.secondarymenu label {
+			display: block;
+			color: white;
+			padding: 1em 0;
+			text-align: center;
+		}
+
+		ul.breadcrumb {
+		  padding: 10px 16px;
+		  list-style: none;
+		  background-color: #eee;
+			float: right;
+			width: 95%;
+		}
 
 	  /* Break down menu items into vertical */
 	  .mainmenu ul li {

@@ -129,7 +129,7 @@ nav.secondarymenu li, label#toggle-menu {
 }
 
 nav.secondarymenu li a, label#toggle-menu {
-	color: #cccccc;
+	color: white;
 	padding: 0.5em;
 	display:block;
 	transition:0.2s;
@@ -137,7 +137,7 @@ nav.secondarymenu li a, label#toggle-menu {
 }
 
 nav.secondarymenu > a {
-	color: #cccccc;
+	color: white;
 }
 
 nav.secondarymenu li:hover, .secondarymenu li:hover li:hover li:hover {
@@ -273,9 +273,15 @@ button {
 		margin-left: 1%;
   }
 
+	img.logo {
+		width: 30%;
+		margin-bottom: -2%;
+	}
+
+
 	.secondarymenu label {
 		display: block;
-		color: #cccccc;
+		color: white;
 		padding: 1em 0;
 		text-align: center;
 	}
@@ -306,8 +312,9 @@ button {
 	    background: #a02620;
 	    font-style: normal;
 	    font-size: 1.2em;
-	    padding: 10px;
-			margin-left: 47%;
+			width: 100%;
+			text-align: center;
+			margin: 0px;
 	  }
 
 	  /* Break down menu items into vertical */

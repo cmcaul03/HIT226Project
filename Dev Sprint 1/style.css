@@ -223,6 +223,21 @@ button {
   background-color: #0A2463;
 }
 
+.next {
+  background-color: #B0030B;
+  color: white;
+	padding: 8px 16px;
+	float: right;
+	text-decoration: none;
+}
+
+.next:hover {
+	color: white;
+	background-color: #0A2463;
+}
+
+
+
 /* Colours */
 
 .colour {

@@ -1,19 +1,20 @@
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css" type="text/css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="Description" content="Quivering Sharks Style Guide">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="js/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Quivering Sharks - Note Taking Template</title>
   </head>
   <body>
     <main>
       <nav class="mainmenu">
         <img src="images/cdu_logo.png" alt="logo" class="logo">
-        <label for="hamburger">&#9776;</label>
+        <label for="hamburger">Menu &#9776;</label>
         <input type="checkbox" id="hamburger"/>
         <ul>
           <li><a href="#">Home</a></li>
@@ -25,41 +26,50 @@
         </ul>
       </nav>
         <nav class="secondarymenu">
-          <label for="navcheckbox" id="toggle-menu">Study Skills Menu<span class="drop-icon">▾</span></label>
-          <input type="checkbox" id="navcheckbox">
-          <ul>
+          <label for="toggle-menu">Study Skills Menu <span class="drop-icon"> ▾</span></label>
+          <input type="checkbox" id="toggle-menu"/>
+          <ul id=secondarymenu>
+            <li><a href="#">Study Skills Home</a></li>
             <li><a href="#">Academic Assignments</a></li>
             <li><a href="#">Academic Writing</a></li>
             <li><a href="#">Critical Thinking</a></li>
             <li><a href="#">Research & Reading</a></li>
-            <li><a href="#">Note Taking</a>
+            <li><a href="#">Note Taking <span class="drop-icon"> ▾</span></a>
               <ul class = "dropdown">
-                <li><a href="#">Intro to Note Making</a>
-                  <ul class = "dropdown2">
-                    <li><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
+                <li><a href="#">Intro to Note Taking <span class="drop-icon"> ▾</span></a>
+                  <ul>
+                    <li><a href="#content">Introduction</a></li>
+                    <li><a href="#content">Effective Note Taking</a></li>
                   </ul></li>
-                <li><a href="#">Note Making Strategies</a>
-                  <ul class = "dropdown2">
-                    <li><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
+                <li><a href="#">Note Taking Strategies <span class="drop-icon"> ▾</span></a>
+                  <ul>
+                    <li><a href="#content">Note Taking Techniques</a></li>
+                    <li><a href="#content">Note Layouts</a></li>
                   </ul></li>
-                <li><a href="#">Note Making at University</a>
-                  <ul class = "dropdown2">
-                    <li><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
+                <li><a href="#">Note Taking at University <span class="drop-icon"> ▾</span></a>
+                  <ul>
+                    <li><a href="#content">Taking Notes in Lectures</a></li>
+                    <li><a href="#content">Taking Notes from Texts</a></li>
                   </ul></li>
               </ul></li>
           </ul>
         </nav>
-        <section>
+        <nav>
+          <ul class="breadcrumb">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Study Skills</a></li>
+            <li>Note Taking - Introduction</a></li>
+          </ul>
+        </nav>
+        <section class="content">
           <h1> Introduction to Note Making </h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aliquet nisl id consequat imperdiet. Proin venenatis at nisi ac rutrum. Sed aliquam ultricies tincidunt. Nunc tempus porta elit a tempus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris tincidunt ipsum eget ullamcorper euismod. Pellentesque id blandit nulla. Cras maximus urna et velit iaculis vestibulum. Donec convallis mattis ipsum at iaculis. Fusce pretium non mi eget varius.</p>
           <p>Sed finibus, nisl sed pulvinar porta, arcu augue dignissim urna, eget scelerisque mi elit vitae nibh. Sed finibus lobortis leo ut rutrum. Donec porta ante non arcu hendrerit, sit amet pharetra tellus rhoncus. Quisque lacus elit, dignissim a erat sit amet, pellentesque luctus leo. Nam diam turpis, efficitur ac scelerisque a, lobortis quis neque. Pellentesque auctor nunc velit, a tristique ante venenatis eu. Morbi sodales sagittis tincidunt. Quisque nulla velit, pulvinar nec eleifend id, ultrices pharetra elit. Proin a ipsum a velit ultrices interdum sit amet vitae diam. Ut interdum convallis quam, ut porttitor urna finibus sit amet. Ut in justo arcu.</p>
-          <p>Donec efficitur fermentum nisi, vitae ultrices purus pharetra et. Duis eu ligula pulvinar, ullamcorper sem suscipit, pharetra enim. Vestibulum dapibus aliquam egestas. Nunc risus dolor, aliquam a justo quis, feugiat rutrum nisi. Nullam semper bibendum tellus sed dictum. Praesent eu efficitur eros. Donec ut dui vel purus molestie elementum et ut purus. Donec consectetur dolor nec nulla tempor, sed porttitor felis rutrum. In placerat leo leo, quis malesuada purus fermentum quis. Phasellus sed justo sem. Ut porta sapien ut lectus aliquet euismod non non justo. Duis consectetur dictum consectetur.</p>
+          <p>Donec efficitur fermentum nisi, vitae ultrices purus pharetra et. Duis eu ligula pulvinar, ullamcorper sem suscipit, pharetra enim. Vestibulum dapibus aliquam egestas. Nunc risus dolor, aliquam a justo quis, feugiat rutrum nisi. Nullam semper bibendum tellus sed dictum. Praesent eu efficitur eros. Donec ut dui vel purus molestie elementum et ut purus. Donec consectetur dolor nec nulla tempor, sed porttitor felis rutrum. In placerat leo leo, quis malesuada purus fermentum quis. Phasellus sed justo sem. Ut porta sapien, ut lectus aliquet euismod non non justo. Duis consectetur dictum consectetur.</p>
           <p>Etiam tempor facilisis aliquet. Curabitur dapibus faucibus justo ac convallis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur aliquet tristique est ut vestibulum. Ut sit amet interdum magna. Morbi vel sagittis metus, vitae lacinia urna. Maecenas a sagittis enim, vitae luctus orci.</p>
           <p>Morbi bibendum, tellus nec finibus convallis, turpis ex mattis arcu, at aliquet diam lacus at purus. Donec vitae ullamcorper ante, ac sodales augue. Aliquam a sapien tincidunt tellus placerat molestie. Ut non metus eget lacus condimentum mattis sit amet at ex. Fusce eget leo vitae elit facilisis rutrum. Quisque at massa et ante dictum sollicitudin a vel ante. Sed in molestie dui.</p>
         </section>
+        <button onclick="topFunction()" id="topbutton" title="Go to top">Top</button>
       </main>
   </body>
 </html>

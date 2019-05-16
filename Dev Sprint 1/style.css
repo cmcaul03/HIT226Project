@@ -10,7 +10,7 @@ body, main, p {
 
 body {
 	background-color: #e2e2e2;
-	min-width: 310px;
+	min-width: 320px;
 }
 
 main {
@@ -19,7 +19,6 @@ main {
   overflow: hidden;
 	width: 80%;
 	margin: auto;
-	display: block;
 }
 
 section {
@@ -46,7 +45,6 @@ h2, h4 {
   color: #B0030B;
 }
 
-
 a {
 	color: #247BA0;
 }
@@ -56,7 +54,7 @@ a:hover {
 }
 
 /* Hide Hamburger */
-.mainmenu label, #hamburger, .secondarymenu label#toggle-menu , #navcheckbox {
+.mainmenu label, #hamburger, .secondarymenu label, #toggle-menu {
   display: none;
 }
 
@@ -92,10 +90,11 @@ img.logo {
 	padding: 1em 0;
 	box-sizing: border-box;
 	float: left;
+  cursor: pointer;
 }
 
 .mainmenu li a {
-	color: #3c3c3c;
+	color: black;
 	padding: 1em;
 }
 
@@ -106,86 +105,61 @@ img.logo {
 /* Secondary Menu */
 nav.secondarymenu {
 	width: 30%;
+	position:relative;
 	border: 1px solid #cccaca;
 	background-color: #0A2463;
 	overflow: hidden;
 	float: left;
 }
 
-.secondarymenu ul {
+nav.secondarymenu ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 }
 
-.secondarymenu li, label#toggle-menu {
+nav.secondarymenu li, label#toggle-menu {
 	display: list-item;
 	text-align: center;
-	padding: 1em 0;
+	padding: 0.4em 0;
 	float: none;
+	position:relative;
+	border-top: 1px solid white;
+	cursor: pointer;
 }
 
-.secondarymenu li a, label#toggle-menu {
-	color: #cccccc;
-	padding: 1em;
+nav.secondarymenu li a, label#toggle-menu {
+	color: white;
+	padding: 0.5em;
+	display:block;
+	transition:0.2s;
+	text-decoration: none
 }
 
-.secondarymenu > a {
-	color: #cccccc;
+nav.secondarymenu > a {
+	color: white;
 }
 
-.secondarymenu li:hover {
+nav.secondarymenu li:hover, .secondarymenu li:hover li:hover li:hover {
 	background-color: #B0030B;
 }
 
-.dropdown {
-	overflow: hidden;
-	max-height: 0;
-	-webkit-transition: all 1s ease-in-out;
-	-webkit-transition-delay: 0.3s;
-	transition: all 1s ease-in-out;
-	transition-delay: 0.3s;
-	-moz-transition: all 1s ease-in-out;
-	-moz-transition-delay: 0.3s;
+nav.secondarymenu ul ul {
+	background:rgba(0,0,0,0.1);
+	transition: max-height 0.5s ease-in-out;
+	transition-delay: 0.4s;
+	max-height:0;
+	overflow:hidden;
 }
 
-.dropdown2 {
-	overflow: hidden;
-	max-height: 0;
-	-webkit-transition: all 1s ease-in-out;
-	-webkit-transition-delay: 0.3s;
-	transition: all 1s ease-in-out;
-	transition-delay: 0.3s;
-	-moz-transition: all 1s ease-in-out;
-	-moz-transition-delay: 0.3s;
+nav.secondarymenu li:hover > ul{
+	max-height: 1000px;
+	transition: max-height 0.9s ease-in;
+	transition-delay: 0.4s;
 }
 
-.secondarymenu li:hover .dropdown, .secondarymenu li:focus-within .dropdown {
-  display: block;
-  max-height: 400px;
+.secondarymenu li:hover .dropdown, .secondarymenu li:hover .dropdown li:hover {
 	background-color: #E2E2E2;
-	-webkit-transition: all 1s ease-in-out;
-	-webkit-transition-delay: 0.5s;
-	transition: all 1s ease-in-out;
-	transition-delay: 0.5s;
-	-moz-transition: all 1s ease-in-out;
-	-moz-transition-delay: 0.5s;
-}
-
-.secondarymenu li:hover .dropdown li:hover .dropdown2, .secondarymenu li:focus-within .dropdown li:focus-within .dropdown2{
-  display: block;
-  max-height: 400px;
-	background-color: #E2E2E2;
-	-webkit-transition: all 1s ease-in-out;
-	-webkit-transition-delay: 0.5s;
-	transition: all 1s ease-in-out;
-	transition-delay: 0.5s;
-	-moz-transition:all 1s ease-in-out;
-	-moz-transition-delay: 0.5s;
-}
-
-.secondarymenu li:hover .dropdown li:hover a{
-  color: #E2E2E2;
 }
 
 .secondarymenu li:hover .dropdown li a{
@@ -193,15 +167,11 @@ nav.secondarymenu {
 }
 
 .secondarymenu li:hover .dropdown li:hover li:hover a{
-  color: #E2E2E2;
+  color: white;
 }
 
-.secondarymenu li:hover .dropdown li:hover .dropdown2, .secondarymenu li:focus-within .dropdown li:focus-within .dropdown2 {
-  max-height: 200px;
-}
-
-.secondarymenu li:hover .dropdown li:hover li a{
-  color: black;
+nav.secondarymenu li li li {
+	border: 0px;
 }
 
 /* Buttons */
@@ -232,6 +202,25 @@ button {
 
 .button_secondary:hover {
 	background-color: #247BA0;
+}
+
+#topbutton {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #B0030B;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#topbutton:hover {
+  background-color: #0A2463;
 }
 
 /* Colours */
@@ -272,6 +261,33 @@ button {
 	background: #247BA0;
 }
 
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: #eee;
+	float: right;
+	width: 65%;
+}
+
+ul.breadcrumb li {
+  display: inline;
+}
+
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+ul.breadcrumb li a {
+  color: #B0030B;
+  text-decoration: none;
+}
+
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
 
 /* [ON SMALL SCREENS] */
 @media screen and (max-width: 1400px){
@@ -286,6 +302,14 @@ button {
 		margin-left: 1%;
   }
 
+	img.logo {
+		width: 30%;
+		margin-bottom: -2%;
+	}
+
+
+
+
   /* Break down menu items into vertical */
   .mainmenu ul li {
     display: block;
@@ -299,6 +323,10 @@ button {
     display: block;
   }
 
+	#topbutton {
+		right: 15px;
+	}
+
 }
 	@media screen and (max-width: 950px){
 	  /* Show Hamburger */
@@ -308,12 +336,24 @@ button {
 	    background: #a02620;
 	    font-style: normal;
 	    font-size: 1.2em;
-	    padding: 10px;
-			margin-left: 47%;
+			width: 100%;
+			text-align: center;
+			margin: 0px;
 	  }
 
-		.secondarymenu label#toggle-menu {
-			display: list-item;
+		.secondarymenu label {
+			display: block;
+			color: white;
+			padding: 1em 0;
+			text-align: center;
+		}
+
+		ul.breadcrumb {
+		  padding: 10px 16px;
+		  list-style: none;
+		  background-color: #eee;
+			float: right;
+			width: 95%;
 		}
 
 	  /* Break down menu items into vertical */
@@ -328,17 +368,19 @@ button {
 	  }
 
 	  /* Toggle show/hide menu on checkbox click */
-		.mainmenu ul, .secondarymenu ul {
+	  .mainmenu ul, .secondarymenu ul {
 	    display: none;
 	  }
-	  .mainmenu input:checked ~ ul,  .secondarymenu input:checked ~ ul  {
-	    display: block;
-	  }
 
-		.mainmenu input:checked ~ li, .secondarymenu input:checked ~ li {
-			display: block;
-			clear: left;
-		}
+		.mainmenu input:checked ~ ul,  .secondarymenu input:checked ~ ul ul, .secondarymenu input:checked ~ ul  {
+ 	    display: block;
+	 	}
+
+	 	.mainmenu input:checked ~ li, .secondarymenu input:checked ~ li, .secondarymenu input:checked ~ li li {
+ 			display: block;
+ 			clear: left;
+	 }
+
 
 		nav.secondarymenu {
 			width: 100%;

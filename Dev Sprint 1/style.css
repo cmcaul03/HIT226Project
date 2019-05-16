@@ -54,8 +54,13 @@ a:hover {
 }
 
 /* Hide Hamburger */
-.mainmenu label, #hamburger, .secondarymenu label, #toggle-menu {
+.mainmenu label, #hamburger, .secondarymenu label, #toggle-menu, #toggle-note-menu {
   display: none;
+}
+
+.secondarymenu ul label {
+	display: list-item;
+
 }
 
 /* Main Menu */
@@ -118,7 +123,7 @@ nav.secondarymenu ul {
 	padding: 0;
 }
 
-nav.secondarymenu li, label#toggle-menu {
+nav.secondarymenu li, label#toggle-menu, label#toggle-note-menu {
 	display: list-item;
 	text-align: center;
 	padding: 0.4em 0;
@@ -128,7 +133,7 @@ nav.secondarymenu li, label#toggle-menu {
 	cursor: pointer;
 }
 
-nav.secondarymenu li a, label#toggle-menu {
+nav.secondarymenu li a, label#toggle-menu, label#toggle-note-menu, nav.secondarymenu ul label {
 	color: white;
 	padding: 0.5em;
 	display:block;
@@ -144,6 +149,7 @@ nav.secondarymenu li:hover, .secondarymenu li:hover li:hover li:hover {
 	background-color: #B0030B;
 }
 
+/*
 nav.secondarymenu ul ul {
 	background:rgba(0,0,0,0.1);
 	transition: max-height 0.5s ease-in-out;
@@ -156,6 +162,20 @@ nav.secondarymenu li:hover > ul{
 	max-height: 1000px;
 	transition: max-height 0.5s ease-in;
 	transition-delay: 0.4s;
+}
+*/
+
+.secondarymenu ul ul {
+	display: none;
+}
+
+.secondarymenu ul input:checked ~ ul  {
+	display: block;
+}
+
+.secondarymenu input:checked ~ li li {
+	display: block;
+	clear: left;
 }
 
 .secondarymenu li:hover .dropdown, .secondarymenu li .dropdown {
@@ -383,11 +403,11 @@ ul.breadcrumb li a:hover {
 	  }
 
 	  /* Toggle show/hide menu on checkbox click */
-	  .mainmenu ul, .secondarymenu ul {
+	  .mainmenu ul, .secondarymenu ul, .secondarymenu ul ul {
 	    display: none;
 	  }
 
-		.mainmenu input:checked ~ ul,  .secondarymenu input:checked ~ ul ul, .secondarymenu input:checked ~ ul  {
+		.mainmenu input:checked ~ ul,  .secondarymenu input:checked ~ ul, .secondarymenu ul input:checked ~ ul  {
  	    display: block;
 	 	}
 

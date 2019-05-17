@@ -1,11 +1,13 @@
+// Back to top button stolen from W3 Schools https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById("topbutton").style.display = "block";
+    document.getElementById("top_button").style.display = "block";
   } else {
-    document.getElementById("topbutton").style.display = "none";
+    document.getElementById("top_button").style.display = "none";
   }
 }
 

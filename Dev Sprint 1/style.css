@@ -21,7 +21,7 @@ main {
 	margin: auto;
 }
 
-section {
+section.content {
 	margin: 20px 1%;
 	padding: 1em;
   border-style: solid;
@@ -53,18 +53,21 @@ a:hover {
 	color: #9f24a0;
 }
 
-/* Hide Hamburger */
-.mainmenu label, #hamburger, .secondarymenu label, #toggle-menu, #toggle-note-menu {
+/* Menus */
+
+/* Hide Menu Toggles on large screens */
+
+.main_menu label, #main_menu_toggle, .secondary_menu label, #secondary_menu_toggle, #note_menu_toggle {
   display: none;
 }
 
-.secondarymenu ul label {
+.secondary_menu ul label {
 	display: list-item;
 
 }
 
 /* Main Menu */
-nav.mainmenu {
+nav.main_menu {
 	width: 100%;
 	border: 1px solid #cccaca;
 	background-color: #E2E2E2;
@@ -76,20 +79,20 @@ img.logo {
   margin-bottom: -1%;
 }
 
-.mainmenu input[type=text] {
+.main_menu input[type=text] {
   padding: 6px;
   border: none;
 	flaot: right;
 }
 
-.mainmenu ul {
+.main_menu ul {
 	display: inline-block;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 }
 
-.mainmenu li {
+.main_menu li {
 	display: inline-block;
 	text-align: center;
 	padding: 1em 0;
@@ -98,17 +101,17 @@ img.logo {
   cursor: pointer;
 }
 
-.mainmenu li a {
+.main_menu li a {
 	color: black;
 	padding: 1em;
 }
 
-.mainmenu li:hover {
+.main_menu li:hover {
 	background-color: #cccaca;
 }
 
 /* Secondary Menu */
-nav.secondarymenu {
+nav.secondary_menu {
 	width: 30%;
 	position:relative;
 	border: 1px solid #cccaca;
@@ -117,13 +120,13 @@ nav.secondarymenu {
 	float: left;
 }
 
-nav.secondarymenu ul {
+nav.secondary_menu ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 }
 
-nav.secondarymenu li, label#toggle-menu, label#toggle-note-menu {
+nav.secondary_menu li, label#secondary_menu_toggle, label#toggle-note-menu {
 	display: list-item;
 	text-align: center;
 	padding: 0.4em 0;
@@ -133,7 +136,7 @@ nav.secondarymenu li, label#toggle-menu, label#toggle-note-menu {
 	cursor: pointer;
 }
 
-nav.secondarymenu li a, label#toggle-menu, label#toggle-note-menu, nav.secondarymenu ul label {
+nav.secondary_menu li a, label#secondary_menu_toggle, label#toggle-note-menu, nav.secondary_menu ul label {
 	color: white;
 	padding: 0.5em;
 	display:block;
@@ -141,70 +144,50 @@ nav.secondarymenu li a, label#toggle-menu, label#toggle-note-menu, nav.secondary
 	text-decoration: none
 }
 
-nav.secondarymenu > a {
+nav.secondary_menu > a {
 	color: white;
 }
 
-nav.secondarymenu li:hover, nav.secondarymenu li.active {
+nav.secondary_menu li:hover, nav.secondary_menu li.active {
 	background-color: #B0030B;
 	color: white;
 }
 
-/*
-nav.secondarymenu ul ul {
-	background:rgba(0,0,0,0.1);
-	transition: max-height 0.5s ease-in-out;
-	transition-delay: 0.2s;
-	max-height:0;
-	overflow:hidden;
-}
-
-nav.secondarymenu li:hover > ul{
-	max-height: 1000px;
-	transition: max-height 0.5s ease-in;
-	transition-delay: 0.4s;
-}
-*/
-
-.secondarymenu ul ul li {
+.secondary_menu ul ul li {
 	border: 0px;
 }
 
-nav.secondarymenu ul input:checked ~ ul > li {
+nav.secondary_menu ul input:checked ~ ul > li {
 	border-top: 1px solid white;
 	transition: border 0.5s ease-out
 }
 
-.secondarymenu ul ul {
+.secondary_menu ul ul {
 	max-height: 0px;
 	transition: max-height 0.5s ease-in;
 }
 
-.secondarymenu ul input:checked ~ ul  {
+.secondary_menu ul input:checked ~ ul  {
 	max-height: 1000px;
 	display: block;
 	transition: max-height 0.5s ease-in;
 }
 
-.secondarymenu input:checked ~ li {
+.secondary_menu input:checked ~ li {
 	display: block;
 	clear: left;
 }
 
-.secondarymenu li:hover .dropdown, .secondarymenu li .dropdown {
+.secondary_menu li:hover .dropdown, .secondary_menu li .dropdown {
 	background-color: #E2E2E2;
 }
 
-.secondarymenu li:hover .dropdown li a, .secondarymenu li .dropdown li a{
+.secondary_menu li:hover .dropdown li a, .secondary_menu li .dropdown li a{
   color: black;
 }
 
-.secondarymenu li:hover .dropdown li:hover a, .secondarymenu li .dropdown li.active a{
+.secondary_menu li:hover .dropdown li:hover a, .secondary_menu li .dropdown li.active a{
   color: white;
-}
-
-nav.secondarymenu li li li {
-	border: 0px;
 }
 
 /* Buttons */
@@ -237,7 +220,7 @@ button {
 	background-color: #247BA0;
 }
 
-#topbutton {
+#top_button {
   display: none;
   position: fixed;
   bottom: 20px;
@@ -252,7 +235,7 @@ button {
   border-radius: 10px;
 }
 
-#topbutton:hover {
+#top_button:hover {
   background-color: #0A2463;
 }
 
@@ -269,45 +252,7 @@ button {
 	background-color: #0A2463;
 }
 
-
-
-/* Colours */
-
-.colour {
-	color: white;
-	padding-top: 3em;
-	font-size: 1.2em;
-	padding-left: 1em;
-}
-
-.colour_container {
-  width: 100%;
-  display: block;
-	list-style-type: none;
-	padding: 0px;
-	vertical-align: bottom;
-}
-
-.colour_primary {
-	background: #0A2463;
-}
-
-.colour_secondary {
-	background: #B0030B;
-}
-
-.colour_dark{
-	background: #353434;
-}
-
-.colour_light {
-	background: #E2E2E2;
-  color: #353434;
-}
-
-.colour_highlight {
-	background: #247BA0;
-}
+/* Breadcrumb Bar */
 
 ul.breadcrumb {
   padding: 10px 16px;
@@ -339,8 +284,9 @@ ul.breadcrumb li a:hover {
 
 /* [ON SMALL SCREENS] */
 @media screen and (max-width: 1400px){
-  /* Show Hamburger */
-  .mainmenu label {
+
+  /* Show main_menu_toggle */
+  .main_menu label {
     display: inline-block;
     color: #fff;
     background: #B0030B;
@@ -355,30 +301,29 @@ ul.breadcrumb li a:hover {
 		margin-bottom: -2%;
 	}
 
-
-
-
-  /* Break down menu items into vertical */
-  .mainmenu ul li {
+  /* Break down main_menu items into vertical */
+  .main_menu ul li {
     display: block;
   }
 
   /* Toggle show/hide menu on checkbox click */
-  .mainmenu ul {
+  .main_menu ul {
     display: none;
   }
-  .mainmenu input:checked ~ ul {
+  .main_menu input:checked ~ ul {
     display: block;
   }
 
-	#topbutton {
+	/* Move back to top button to the left */
+
+	#top_button {
 		right: 15px;
 	}
 
 }
 	@media screen and (max-width: 950px){
-	  /* Show Hamburger */
-	  .mainmenu label {
+	  /* Show main_menu_toggle */
+	  .main_menu label {
 	    display: inline-block;
 	    color: #fff;
 	    background: #B0030B;
@@ -389,12 +334,16 @@ ul.breadcrumb li a:hover {
 			margin: 0px;
 	  }
 
-		.secondarymenu label {
+		/* Show secondary_menu_toggle */
+
+		.secondary_menu label {
 			display: block;
 			color: white;
 			padding: 1em 0;
 			text-align: center;
 		}
+
+		/* Realign breadcrumb bar */
 
 		ul.breadcrumb {
 		  padding: 10px 16px;
@@ -405,32 +354,32 @@ ul.breadcrumb li a:hover {
 		}
 
 	  /* Break down menu items into vertical */
-	  .mainmenu ul li {
+	  .main_menu ul li {
 	    display: block;
 			clear: left;
 			width: 100%;
 	  }
 
-	  .mainmenu ul li {
+	  .main_menu ul li {
 	    border-top: 1px solid #333;
 	  }
 
 	  /* Toggle show/hide menu on checkbox click */
-	  .mainmenu ul, .secondarymenu ul, .secondarymenu ul ul {
+	  .main_menu ul, .secondary_menu ul, .secondary_menu ul ul {
 	    display: none;
 	  }
 
-		.mainmenu input:checked ~ ul,  .secondarymenu input:checked ~ ul, .secondarymenu ul input:checked ~ ul  {
+		.main_menu input:checked ~ ul,  .secondary_menu input:checked ~ ul, .secondary_menu ul input:checked ~ ul  {
  	    display: block;
 	 	}
 
-	 	.mainmenu input:checked ~ li, .secondarymenu input:checked ~ li, .secondarymenu input:checked ~ li li {
+	 	.main_menu input:checked ~ li, .secondary_menu input:checked ~ li, .secondary_menu input:checked ~ li li {
  			display: block;
  			clear: left;
 	 }
 
-
-		nav.secondarymenu {
+	 /* Resize secondary menu*/
+		nav.secondary_menu {
 			width: 100%;
 			border: 1px solid #cccaca;
 			background-color: #0A2463;
@@ -438,13 +387,17 @@ ul.breadcrumb li a:hover {
 			float: left;
 		}
 
-		section {
+		/* Resize main content */
+
+		section.content {
 			margin: 20px 1%;
 			padding: 1em;
 		  border-style: solid;
 		  width: 85%;
 		  float: left;
 		}
+
+		/* Resize logo on mobiles */
 
 		img.logo {
 		  width: 100%;

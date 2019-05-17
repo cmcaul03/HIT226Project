@@ -138,7 +138,8 @@ nav.secondarymenu li a, label#toggle-menu, label#toggle-note-menu, nav.secondary
 	padding: 0.5em;
 	display:block;
 	transition:0.2s;
-	text-decoration: none
+	text-decoration: none;
+	cursor: pointer;
 }
 
 nav.secondarymenu > a {

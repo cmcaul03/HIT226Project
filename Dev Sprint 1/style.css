@@ -13,12 +13,20 @@ body {
 	min-width: 320px;
 }
 
-main {
+main, header {
 	background-color: white;
-	padding: 2em 1em;
   overflow: hidden;
 	width: 80%;
+	padding: 0em 1em;
 	margin: auto;
+}
+
+main {
+	padding-bottom: 1em
+}
+
+header {
+	padding-top: 1em;
 }
 
 section.content {

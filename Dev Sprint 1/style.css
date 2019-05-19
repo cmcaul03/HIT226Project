@@ -295,9 +295,19 @@ aside.overview, aside.dos, aside.donts {
 
 /* Content Dropdowns */
 
-.dropdown li {
+section.content ul.droplist {
+	list-style-type: none;
+}
+
+section.content ul.droplist ul.dropdown {
 	max-height: 0px;
 	display: none;
+}
+
+section.content ul.droplist input:checked ~ ul.dropdown {
+	max-height: 200px;
+	display: list-item;
+	list-style-type: none;
 }
 
 /* [ON SMALL SCREENS] */

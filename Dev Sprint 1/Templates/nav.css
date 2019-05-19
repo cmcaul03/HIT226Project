@@ -141,7 +141,8 @@ nav.secondary_menu li a, label#secondary_menu_toggle, label#toggle-note-menu, na
 	padding: 0.5em;
 	display:block;
 	transition:0.2s;
-	text-decoration: none
+	text-decoration: none;
+	cursor: pointer;
 }
 
 nav.secondary_menu > a {
@@ -245,6 +246,7 @@ button {
 	padding: 8px 16px;
 	float: right;
 	text-decoration: none;
+	margin-top: 20px;
 }
 
 .next:hover {
@@ -280,6 +282,32 @@ ul.breadcrumb li a {
 ul.breadcrumb li a:hover {
   color: #01447e;
   text-decoration: underline;
+}
+
+/* Aside content */
+
+aside.overview, aside.dos, aside.donts {
+	background-color: #eee;
+	border: 1px solid #ddd;
+	padding: 0 10px;
+  margin: 20px 0;
+}
+
+/* Content Dropdowns */
+
+section.content ul.droplist {
+	list-style-type: none;
+}
+
+section.content ul.droplist ul.dropdown {
+	max-height: 0px;
+	display: none;
+}
+
+section.content ul.droplist input:checked ~ ul.dropdown {
+	max-height: 200px;
+	display: list-item;
+	list-style-type: none;
 }
 
 /* [ON SMALL SCREENS] */
@@ -321,6 +349,7 @@ ul.breadcrumb li a:hover {
 	}
 
 }
+
 	@media screen and (max-width: 950px){
 	  /* Show main_menu_toggle */
 	  .main_menu label {

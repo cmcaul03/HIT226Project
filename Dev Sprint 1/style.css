@@ -246,6 +246,7 @@ button {
 	padding: 8px 16px;
 	float: right;
 	text-decoration: none;
+	margin-top: 20px;
 }
 
 .next:hover {
@@ -285,11 +286,18 @@ ul.breadcrumb li a:hover {
 
 /* Aside content */
 
-aside.overview {
+aside.overview, aside.dos, aside.donts {
 	background-color: #eee;
 	border: 1px solid #ddd;
 	padding: 0 10px;
   margin: 20px 0;
+}
+
+/* Content Dropdowns */
+
+.dropdown li {
+	max-height: 0px;
+	display: none;
 }
 
 /* [ON SMALL SCREENS] */

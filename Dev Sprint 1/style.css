@@ -142,11 +142,12 @@ nav.secondary_menu li, label#secondary_menu_toggle, label#toggle-note-menu {
 	position:relative;
 	border-top: 1px solid white;
 	cursor: pointer;
+	padding: 0;
 }
 
 nav.secondary_menu li a, label#secondary_menu_toggle, label#toggle-note-menu, nav.secondary_menu ul label {
 	color: white;
-	padding: 0.5em;
+	padding: 1em;
 	display:block;
 	transition:0.2s;
 	text-decoration: none;
@@ -177,7 +178,7 @@ nav.secondary_menu ul input:checked ~ ul > li {
 }
 
 .secondary_menu ul input:checked ~ ul  {
-	max-height: 1000px;
+	max-height: 100%;
 	display: block;
 	transition: max-height 0.5s ease-in;
 }
@@ -305,17 +306,52 @@ aside.overview, aside.dos, aside.donts {
 
 section.content ul.droplist {
 	list-style-type: none;
+	position:relative;
+	border: 1px solid #cccaca;
+	background-color: #eee;
+	overflow: hidden;
+	padding: 0;
+}
+
+section.content ul.droplist input {
+	display: none;
+}
+
+section.content ul.droplist li:first-child label {
+	border-top: none;
+}
+
+section.content ul.droplist label {
+	border-top: 1px solid #cccaca;
+	cursor: pointer;
+	padding: 10px;
+	display: block;
+	font-weight: bold;
 }
 
 section.content ul.droplist ul.dropdown {
 	max-height: 0px;
 	display: none;
+	padding-bottom: 10px;
+	padding-right: 20px;
 }
 
 section.content ul.droplist input:checked ~ ul.dropdown {
-	max-height: 200px;
+	max-height: 100%;
 	display: list-item;
 	list-style-type: none;
+}
+
+/* Tables */
+
+table {
+    border-collapse: collapse;
+		background-color: #f8f8f8;
+}
+
+td {
+    border: 1px solid #666666;
+		padding: 0.4em;
 }
 
 /* [ON SMALL SCREENS] */

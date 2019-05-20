@@ -37,6 +37,10 @@ section.content {
   float: left;
 }
 
+section.content img {
+	width: 90%;
+}
+
 
 
 
@@ -175,6 +179,14 @@ nav.secondary_menu ul input:checked ~ ul > li {
 .secondary_menu ul ul {
 	max-height: 0px;
 	transition: max-height 0.5s ease-in;
+}
+
+.secondary_menu ul ul a {
+	display: none;
+}
+
+.secondary_menu ul input:checked ~ ul a {
+	display: block;
 }
 
 .secondary_menu ul input:checked ~ ul  {

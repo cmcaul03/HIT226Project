@@ -486,4 +486,8 @@ td {
 		  margin-bottom: 0%;
 		}
 
+		section.content img {
+			width: 100%;
+		}
+
 }

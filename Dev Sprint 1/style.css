@@ -471,16 +471,21 @@ td {
 
 		/* Resize main content */
 
+		body {
+			margin: 0.2em;
+		}
+
 		section.content {
 			margin: 20px 1%;
 			padding: 1em;
 		  border-style: solid;
-		  width: 93%;
+		  width: auto;
 		  float: left;
 		}
 
 		main, header {
 			width: 95%;
+			padding: 0 0.5em;
 		}
 
 		/* Resize images on mobiles */
@@ -491,7 +496,17 @@ td {
 		}
 
 		section.content img {
-			width: 100%;
+			width: 106%;
+			margin-left: -30px;
 		}
+}
 
+/* Increase image size on smaller devices */
+
+@media screen and (max-width: 450px){
+
+		section.content img {
+			width: 116%;
+			margin-left: -30px;
+		}
 }

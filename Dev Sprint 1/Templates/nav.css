@@ -13,12 +13,20 @@ body {
 	min-width: 320px;
 }
 
-main {
+main, header {
 	background-color: white;
-	padding: 2em 1em;
   overflow: hidden;
 	width: 80%;
+	padding: 0em 1em;
 	margin: auto;
+}
+
+main {
+	padding-bottom: 1em
+}
+
+header {
+	padding-top: 1em;
 }
 
 section.content {
@@ -29,8 +37,9 @@ section.content {
   float: left;
 }
 
-
-
+section.content img {
+	width: 90%;
+}
 
 /* Text */
 
@@ -134,11 +143,12 @@ nav.secondary_menu li, label#secondary_menu_toggle, label#toggle-note-menu {
 	position:relative;
 	border-top: 1px solid white;
 	cursor: pointer;
+	padding: 0;
 }
 
 nav.secondary_menu li a, label#secondary_menu_toggle, label#toggle-note-menu, nav.secondary_menu ul label {
 	color: white;
-	padding: 0.5em;
+	padding: 1em;
 	display:block;
 	transition:0.2s;
 	text-decoration: none;
@@ -168,8 +178,16 @@ nav.secondary_menu ul input:checked ~ ul > li {
 	transition: max-height 0.5s ease-in;
 }
 
+.secondary_menu ul ul a {
+	display: none;
+}
+
+.secondary_menu ul input:checked ~ ul a {
+	display: block;
+}
+
 .secondary_menu ul input:checked ~ ul  {
-	max-height: 1000px;
+	max-height: 100%;
 	display: block;
 	transition: max-height 0.5s ease-in;
 }
@@ -297,17 +315,52 @@ aside.overview, aside.dos, aside.donts {
 
 section.content ul.droplist {
 	list-style-type: none;
+	position:relative;
+	border: 1px solid #cccaca;
+	background-color: #eee;
+	overflow: hidden;
+	padding: 0;
+}
+
+section.content ul.droplist input {
+	display: none;
+}
+
+section.content ul.droplist li:first-child label {
+	border-top: none;
+}
+
+section.content ul.droplist label {
+	border-top: 1px solid #cccaca;
+	cursor: pointer;
+	padding: 10px;
+	display: block;
+	font-weight: bold;
 }
 
 section.content ul.droplist ul.dropdown {
 	max-height: 0px;
 	display: none;
+	padding-bottom: 10px;
+	padding-right: 20px;
 }
 
 section.content ul.droplist input:checked ~ ul.dropdown {
-	max-height: 200px;
+	max-height: 100%;
 	display: list-item;
 	list-style-type: none;
+}
+
+/* Tables */
+
+table {
+    border-collapse: collapse;
+		background-color: #f8f8f8;
+}
+
+td {
+    border: 1px solid #666666;
+		padding: 0.4em;
 }
 
 /* [ON SMALL SCREENS] */
@@ -418,19 +471,42 @@ section.content ul.droplist input:checked ~ ul.dropdown {
 
 		/* Resize main content */
 
+		body {
+			margin: 0.2em;
+		}
+
 		section.content {
 			margin: 20px 1%;
 			padding: 1em;
 		  border-style: solid;
-		  width: 85%;
+		  width: auto;
 		  float: left;
 		}
 
-		/* Resize logo on mobiles */
+		main, header {
+			width: 95%;
+			padding: 0 0.5em;
+		}
+
+		/* Resize images on mobiles */
 
 		img.logo {
 		  width: 100%;
 		  margin-bottom: 0%;
 		}
 
+		section.content img {
+			width: 106%;
+			margin-left: -30px;
+		}
+}
+
+/* Increase image size on smaller devices */
+
+@media screen and (max-width: 450px){
+
+		section.content img {
+			width: 116%;
+			margin-left: -30px;
+		}
 }

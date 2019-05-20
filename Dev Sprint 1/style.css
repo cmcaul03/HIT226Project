@@ -475,8 +475,12 @@ td {
 			margin: 20px 1%;
 			padding: 1em;
 		  border-style: solid;
-		  width: 85%;
+		  width: 93%;
 		  float: left;
+		}
+
+		main, header {
+			width: 95%;
 		}
 
 		/* Resize images on mobiles */

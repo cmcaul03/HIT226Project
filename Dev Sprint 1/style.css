@@ -509,7 +509,7 @@ footer .fa:hover, footer a:hover {
 		  float: left;
 		}
 
-		main, header {
+		main, header, footer {
 			width: 95%;
 			padding: 0 0.5em;
 		}
@@ -524,6 +524,10 @@ footer .fa:hover, footer a:hover {
 		section.content img {
 			width: 106%;
 			margin-left: -30px;
+		}
+
+		footer .fa {
+		  padding: 20px 0 15px 0;
 		}
 }
 

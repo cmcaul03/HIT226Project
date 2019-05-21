@@ -310,7 +310,7 @@ section.content ul.droplist {
 	list-style-type: none;
 	position:relative;
 	border: 1px solid #cccaca;
-	background-color: #eee;
+	background-color: #f8f8f8;
 	overflow: hidden;
 	padding: 0;
 }
@@ -329,6 +329,7 @@ section.content ul.droplist label {
 	padding: 10px;
 	display: block;
 	font-weight: bold;
+	background-color: #eee;
 }
 
 section.content ul.droplist ul.dropdown {

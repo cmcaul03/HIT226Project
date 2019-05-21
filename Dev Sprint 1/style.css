@@ -346,6 +346,17 @@ section.content ul.droplist input:checked ~ ul.dropdown {
 	list-style-type: none;
 }
 
+section.content input:checked ~ ul.droplist ul.dropdown {
+	max-height: 100%;
+	display: list-item;
+	list-style-type: none;
+}
+
+section.content  label.expand_collapse {
+	color: #18536D;
+	text-decoration: underline;
+}
+
 /* Tables */
 
 table {

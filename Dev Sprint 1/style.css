@@ -146,7 +146,7 @@ nav.secondary_menu li a, label#secondary_menu_toggle, label#toggle-note-menu, na
 	color: white;
 	padding: 1em;
 	display:block;
-	transition:0.2s;
+	transition: 0.4s;
 	text-decoration: none;
 	cursor: pointer;
 }
@@ -166,12 +166,10 @@ nav.secondary_menu li:hover, nav.secondary_menu li.active {
 
 nav.secondary_menu ul input:checked ~ ul > li {
 	border-top: 1px solid white;
-	transition: border 0.5s ease-out
 }
 
-.secondary_menu ul ul {
+.secondary_menu ul ul, .secondary_menu ul ul li {
 	max-height: 0px;
-	transition: max-height 0.5s ease-in;
 }
 
 .secondary_menu ul ul a {
@@ -182,10 +180,9 @@ nav.secondary_menu ul input:checked ~ ul > li {
 	display: block;
 }
 
-.secondary_menu ul input:checked ~ ul  {
-	max-height: 100%;
-	display: block;
-	transition: max-height 0.5s ease-in;
+.secondary_menu ul input:checked ~ ul, .secondary_menu ul input:checked ~ ul li {
+	max-height: 2000px;
+	transition: max-height 0.4s ease-in-out;
 }
 
 .secondary_menu input:checked ~ li {

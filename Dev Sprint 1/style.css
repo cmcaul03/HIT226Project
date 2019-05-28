@@ -315,6 +315,10 @@ section.content ul.droplist {
 	padding: 0;
 }
 
+section.content ul.droplist h3 {
+	margin: 0;
+}
+
 section.content ul.droplist input {
 	display: none;
 }

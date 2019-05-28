@@ -317,6 +317,9 @@ section.content ul.droplist {
 
 section.content ul.droplist h3 {
 	margin: 0;
+	color: #18536D;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1em;
 }
 
 section.content ul.droplist input {

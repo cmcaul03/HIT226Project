@@ -503,6 +503,10 @@ footer .fa:hover, footer a:hover {
  			clear: left;
 	 }
 
+		 .main_menu input[type=text] {
+	    float: none;
+		}
+
 	 /* Resize secondary menu*/
 		nav.secondary_menu {
 			width: 100%;
